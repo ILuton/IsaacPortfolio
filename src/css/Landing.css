@@ -13,6 +13,12 @@
 .landingName {
         text-align: center;
         font-size: 5vw;
-        color: black;
-        margin-bottom: 1rem;
+        color:  #3D3C3A;
+        margin-top: -4rem;
+        
+}
+
+.landingName > * {
+        text-shadow: 1px 1px 1px #333;
+        transform: rotate(-deg);
 }
