@@ -20,5 +20,15 @@
 
 .landingName > * {
         text-shadow: 1px 1px 1px #333;
-        transform: rotate(-deg);
+}
+
+.landingLearnMore{
+        color:  #3D3C3A;
+}
+
+.landingLearnMore > * {
+        text-shadow: 0px 1px 1px #333;
+        border: 1px solid #3D3C3A;
+        border-radius: .3rem;
+        padding: .2rem;
 }

@@ -1,11 +1,13 @@
 import Landing from "./components/Landing";
+import Nav from "./components/Nav";
 
 import "./css/App.css"
 function App() {
   return (
     <div className="app">
+      <Nav/>
       <Landing/>
-      <h1>test</h1>
+      <h1>About</h1>
       
     </div>
   );
