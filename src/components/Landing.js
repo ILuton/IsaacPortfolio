@@ -9,7 +9,8 @@ function Landing() {
             <h2>Full-stack Web Developer.</h2>
         </div>
         <div className='landingLearnMore'>
-            <h3>Learn more</h3>
+            <h3 className='learnMoreTitle'>Learn more</h3>
+            <span className="arrow">&#8594;</span>
 
         </div>
       

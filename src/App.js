@@ -1,14 +1,14 @@
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
+import About from "./components/About";
 
-import "./css/App.css"
+import "./css/App.css";
 function App() {
   return (
     <div className="app">
-      <Nav/>
-      <Landing/>
-      <h1>About</h1>
-      
+      <Nav />
+      <Landing />
+      <About />
     </div>
   );
 }
