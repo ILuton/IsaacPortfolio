@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { useRef } from "react";
+import "../css/Block.css";
+
+import Responsive from "../images/responsive.png";
 
 function Blocks() {
   const containerRef = useRef(null);
@@ -17,7 +20,9 @@ function Blocks() {
       if (rect.top < window.innerHeight / 1.5) {
         const children = containerRef.current.children;
         for (let i = 0; i < children.length; i++) {
-          children[i].classList.add("animate");
+          if (i % 2 !== 1) {
+            children[i].classList.add("animate");
+          }
         }
       }
     }
@@ -25,10 +30,23 @@ function Blocks() {
 
   return (
     <div className="blockContainer" ref={containerRef}>
-      <div className="block block1">Block 1</div>
-      <div className="block block2">Block 2</div>
-      <div className="block block3">Block 3</div>
-      {/* and so on for each block */}
+      <div className="block block1">
+        <h1 className="blockTitle">Responsive</h1>
+      </div>
+      <div className="blockInfo">
+        <img className="aboutImage" src={Responsive} alt="" />
+        <p className="test">text here</p>
+      </div>
+
+      <div className="block block2">
+        <h1>Intuitive</h1>
+      </div>
+      <div className="block block3">
+        <h1>Fast</h1>
+      </div>
+      <div className="block block4">
+        <h1>Fun</h1>
+      </div>
     </div>
   );
 }
