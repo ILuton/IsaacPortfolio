@@ -3,6 +3,8 @@ import { useRef } from "react";
 import "../css/Block.css";
 
 import Responsive from "../images/responsive.png";
+import Intuition from "../images/intuition.png";
+import Fast from "../images/fast.png";
 
 function Blocks() {
   const containerRef = useRef(null);
@@ -30,23 +32,38 @@ function Blocks() {
 
   return (
     <div className="blockContainer" ref={containerRef}>
+
       <div className="block block1">
-        <h1 className="blockTitle">Responsive</h1>
-      </div>
-      <div className="blockInfo">
-        <img className="aboutImage" src={Responsive} alt="" />
-        <p className="test">text here</p>
+        <div className="blockImageContainer">
+          <img className="aboutImage" src={Responsive} alt="" />
+        </div>
+        <div className="blockText">
+          <h3 className="blockTitle">Responsive</h3>
+          <p className="test">text here</p>
+        </div>
       </div>
 
       <div className="block block2">
-        <h1>Intuitive</h1>
+        <div className="blockImageContainer">
+          <img className="aboutImage" src={Intuition} alt="" />
+        </div>
+        <div className="blockText">
+          <h3 className="blockTitle">Intuitive</h3>
+          <p className="test">text here</p>
+        </div>
       </div>
+
+
       <div className="block block3">
-        <h1>Fast</h1>
+        <div className="blockImageContainer">
+          <img className="aboutImage" src={Fast} alt="" />
+        </div>
+        <div className="blockText">
+          <h3 className="blockTitle">Fast</h3>
+          <p className="test">text here</p>
+        </div>
       </div>
-      <div className="block block4">
-        <h1>Fun</h1>
-      </div>
+
     </div>
   );
 }

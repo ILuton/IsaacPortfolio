@@ -9,8 +9,8 @@
 .aboutTitle {
   text-decoration: underline;
   color: #3d3c3a;
-  text-shadow: 0px 1px 0px #333;
-  height: 5%;
+  text-shadow: 0px 1px 1px #333;
+  height: 2%;
   width: 100%;
   text-align: center;
 }
