@@ -6,7 +6,7 @@ function Landing() {
     <div className='landingContainer'>
         <div className='landingName'>
             <h1>Isaac Luton</h1>
-            <h2>Full-stack Web Developer.</h2>
+            <h2>Full-stack Web Developer</h2>
         </div>
         <div className='landingLearnMore'>
             <h3 className='learnMoreTitle'>Learn more</h3>
