@@ -10,50 +10,39 @@
   }
   
   .block {
-    /* position: absolute; */
     height: 15%;
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
   
   .animate {
-    animation: fall 3s;
-    animation-fill-mode: forwards;
+    opacity: 1 !important;
   }
   
   .block1 {
-    animation-delay: 0s;
+    transition: opacity 3s ease-in-out;
+    opacity: 0;
   }
   .block2 {
-    animation-delay: 1s;
+    transition: opacity 6s ease-in-out;
+    opacity: 0;
   }
   .block3 {
-    animation-delay: 2s;
-  }
-
-  /* and so on for each block */
-  
-  @keyframes fall {
-  }
-  
-  .test {
-    animation: fadeIn 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+    transition: opacity 9s ease-in-out;
+    opacity: 0;
   }
   
   .aboutImage{
     height: auto;
-    width: 100%;
+    width: 75%;
     animation: fadeIn 5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
   
-  @keyframes fadeIn {
-  }
   
   .blockImageContainer {
     width: 30%;

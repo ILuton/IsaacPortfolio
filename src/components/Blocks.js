@@ -19,12 +19,10 @@ function Blocks() {
   function handleScroll() {
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 1.5) {
+      if (rect.top < window.innerHeight / 1.15) {
         const children = containerRef.current.children;
         for (let i = 0; i < children.length; i++) {
-          if (i % 2 !== 1) {
-            children[i].classList.add("animate");
-          }
+          children[i].classList.add("animate");
         }
       }
     }
@@ -32,7 +30,6 @@ function Blocks() {
 
   return (
     <div className="blockContainer" ref={containerRef}>
-
       <div className="block block1">
         <div className="blockImageContainer">
           <img className="aboutImage" src={Responsive} alt="" />
@@ -53,7 +50,6 @@ function Blocks() {
         </div>
       </div>
 
-
       <div className="block block3">
         <div className="blockImageContainer">
           <img className="aboutImage" src={Fast} alt="" />
@@ -63,7 +59,6 @@ function Blocks() {
           <p className="test">text here</p>
         </div>
       </div>
-
     </div>
   );
 }
