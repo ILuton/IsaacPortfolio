@@ -1,6 +1,6 @@
 
   
-.animate {
+.animatePopup {
     animation: slide-in 1s ease-out;
     animation-fill-mode: forwards;
     opacity: 0;

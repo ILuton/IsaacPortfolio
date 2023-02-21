@@ -36,7 +36,7 @@ function Blocks() {
         </div>
         <div className="blockText">
           <h3 className="blockTitle">Responsive</h3>
-          <p className="test">text here</p>
+          <p className="test">Friendly UI/UX across all devices</p>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ function Blocks() {
         </div>
         <div className="blockText">
           <h3 className="blockTitle">Intuitive</h3>
-          <p className="test">text here</p>
+          <p className="test">Easy to understand and navigate</p>
         </div>
       </div>
 
@@ -56,7 +56,7 @@ function Blocks() {
         </div>
         <div className="blockText">
           <h3 className="blockTitle">Fast</h3>
-          <p className="test">text here</p>
+          <p className="test">Optimized for performance</p>
         </div>
       </div>
     </div>

@@ -1,21 +1,28 @@
-import React from 'react'
+import React from "react";
 import "../css/Profile.css";
-import ProfilePic from "../images/ProfilePic.jpg"
-
+import ProfilePic from "../images/ProfilePic.jpg";
 
 function Profile() {
   return (
-    <div className='profileContainer'>
-        <div className='profilePicContainer'>
-            <img className='profilePic' src={ProfilePic} alt=""/>
-        </div>
-        <div className='profileText'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-      
+    <div className="profileContainer">
+      <div className="profilePicContainer">
+        <img className="profilePic" src={ProfilePic} alt="" />
+      </div>
+      <div className="profileText">
+        <p>
+          Hello, my name is Isaac Luton and I'm a talented web developer with 2
+          years of experience designing and developing websites. My expertise
+          lies in creating responsive web designs that not only look visually
+          appealing but also provide an exceptional user experience. I have a
+          keen eye for detail and am committed to ensuring that every project I
+          work on meets the highest standards of quality and functionality. I am
+          constantly seeking to learn and grow as a web developer by staying
+          up-to-date with the latest trends and best practices in web
+          development.
+        </p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Profile
+export default Profile;

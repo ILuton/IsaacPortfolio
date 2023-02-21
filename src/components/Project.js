@@ -6,13 +6,13 @@ import Top from "../images/top.png";
 import Devise from "../images/devise.png";
 import Zen from "../images/zen.png";
 
-function Item({ name, description, image }) {
+function Item({ name, description }) {
   const [isOpen, setIsOpen] = useState(false);
   const [className, setClassName] = useState('');
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
-    setClassName("animate")
+    setClassName("animatePopup")
 
   };
 
@@ -58,7 +58,7 @@ function Project() {
       description: "test3",
     },
     {
-      name: "Zen",
+      name: "Zen Ten",
       description: "test4",
     }]
     
