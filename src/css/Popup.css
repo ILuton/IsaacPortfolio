@@ -1,0 +1,31 @@
+
+  
+.animate {
+    animation: slide-in 1s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+  @keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  
+  .popup h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(16, 14, 14);
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    display: block;
+    margin: 0 auto;
+  }

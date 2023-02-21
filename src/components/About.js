@@ -8,10 +8,12 @@ import Icons from "./Icons";
 function About() {
   return (
     <div className="aboutContainer">
-      <h1 className="aboutTitle">About</h1>
+      <h1 id="About" className="aboutTitle">
+        About
+      </h1>
       <Profile />
-      <Blocks />      
-      <Icons />      
+      <Blocks />
+      <Icons />
     </div>
   );
 }

@@ -38,13 +38,16 @@
 
 .learnMoreTitle {
         font-size: .8rem;
+        color: #3d3c3a;
+        display: flex;
+        text-decoration: none;
+        
 }
 
-.landingLearnMore:hover {
-  background-color: #3d3c3a;
-  color: white;
-  text-shadow: 0px 1px 1px #333;
-}
+
+
+
+
 
 .landingLearnMore:hover .arrow {
   transform: rotate(90deg);

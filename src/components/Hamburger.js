@@ -12,13 +12,13 @@ function Hamburger() {
       isOpen={menuOpen}
       onStateChange={(state) => setMenuOpen(state.isOpen)}
     >
-      <a id="home" className="menu-item" href="/">
+      <a className="menu-item" href="#Home">
         Home
       </a>
-      <a id="about" className="menu-item" href="/about">
+      <a className="menu-item" href="#About">
         About
       </a>
-      <a id="work" className="menu-item" href="/work">
+      <a className="menu-item" href="#Work">
         My Work
       </a>
       <a id="contact" className="menu-item" href="/contact">
