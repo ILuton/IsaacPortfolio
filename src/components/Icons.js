@@ -4,14 +4,14 @@ import { useRef } from "react";
 import "../css/Icons.css";
 
 function Icons() {
-  const containerRef = useRef(null);
+  const containerRefIcon = useRef(null);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [containerRef]);
+  }, [containerRefIcon]);
 
   function handleScroll() {
     const reactBar = document.querySelector(".reactBar");
@@ -67,7 +67,7 @@ function Icons() {
       <div className="iconBox">
         <i className="devicon-react-original-wordmark colored icon"></i>
         <div className="barBackground">
-          <div className="reactBar" ref={containerRef} />
+          <div className="reactBar" ref={containerRefIcon} />
         </div>
       </div>
       <div className="iconBox">

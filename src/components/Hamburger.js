@@ -26,10 +26,10 @@ function Hamburger() {
       </a>
 
       <div className="burgerLinks">
-        <a href="./">
+        <a target="_blank" rel="noreferrer" href="https://github.com/ILuton">
           <img className="burgerGithub" src={github} alt="" />
         </a>
-        <a href="./">
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/isaacluton/">
           <img className="burgerLinkedIn" src={linkedin} alt="" />
         </a>
       </div>

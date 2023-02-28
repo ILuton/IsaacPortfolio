@@ -19,21 +19,28 @@
     justify-content: space-between;
   }
   
-  .animate {
+  
+  .animateBlock {
     opacity: 1 !important;
   }
   
   .block1 {
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2s ease-in-out;
     opacity: 0;
+    animation-fill-mode: forwards;
+
   }
   .block2 {
-    transition: opacity 6s ease-in-out;
+    transition: opacity 4s ease-in-out;
     opacity: 0;
+    animation-fill-mode: forwards;
+
   }
   .block3 {
-    transition: opacity 9s ease-in-out;
+    transition: opacity 6s ease-in-out;
     opacity: 0;
+    animation-fill-mode: forwards;
+
   }
   
   .aboutImage{
@@ -53,4 +60,18 @@
   .blockText {
     width: 70%;
     text-align: center;
+    
+  }
+
+  .fast {
+    color: #409dd0;
+  }
+
+  .intuitive {
+    color: #f4d111;
+
+  }
+
+  .responsive {
+    color: #fb9e69;
   }

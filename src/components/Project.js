@@ -8,29 +8,33 @@ import Zen from "../images/zen.png";
 
 function Item({ name, description }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [className, setClassName] = useState('');
+  const [className, setClassName] = useState("");
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
-    setClassName("animatePopup")
-
+    setClassName("animatePopup");
   };
 
   const imageToUse = (name) => {
-   if (name === "Stop") {
-    return Stop
-   } else if (name === "Top Tech Blog") {
-    return Top
-   } else if (name === "Devise") {
-    return Devise
-   } else {
-    return Zen
-   }
-   }
+    if (name === "Stop") {
+      return Stop;
+    } else if (name === "Top Tech Blog") {
+      return Top;
+    } else if (name === "Devise") {
+      return Devise;
+    } else {
+      return Zen;
+    }
+  };
 
   return (
     <div className="project">
-      <img className="projectImage" onClick={togglePopup} src={imageToUse(name)} alt={name} />
+      <img
+        className="projectImage"
+        onClick={togglePopup}
+        src={imageToUse(name)}
+        alt={name}
+      />
 
       {isOpen && (
         <div className={className}>
@@ -60,17 +64,19 @@ function Project() {
     {
       name: "Zen Ten",
       description: "test4",
-    }]
-    
+    },
+  ];
 
   return (
     <div id="Work" className="workPage">
-      <div className="workPageTitleContainer">
-        <h1 className="workPageTitle">My Work</h1>
-      </div>
+      <h1 className="aboutTitle">My Work</h1>
       <div className="workContainer">
         {projects.map((projects, index) => (
-          <Item key={index} name={projects.name} description={projects.description}/>
+          <Item
+            key={index}
+            name={projects.name}
+            description={projects.description}
+          />
         ))}
       </div>
     </div>
