@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRef } from "react";
 import "../css/Projects.css";
 import "../css/Popup.css";
 import Stop from "../images/stop.png";
@@ -27,8 +28,9 @@ function Item({ name, description }) {
     }
   };
 
+
   return (
-    <div className="project">
+    <div className={name}>
       <img
         className="projectImage"
         onClick={togglePopup}
@@ -67,10 +69,32 @@ function Project() {
     },
   ];
 
+  const containerRefProjects = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [containerRefProjects]);
+
+  function handleScroll() {
+    if (containerRefProjects.current) {
+      const rect = containerRefProjects.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight / 1.5) {
+        const children = containerRefProjects.current.children;
+        for (let i = 0; i < children.length; i++) {
+          children[i].classList.add("animateProjectOne");
+         
+        }
+      }
+    }
+  }
+
   return (
     <div id="Work" className="workPage">
       <h1 className="aboutTitle">My Work</h1>
-      <div className="workContainer">
+      <div className="workContainer" ref={containerRefProjects}>
         {projects.map((projects, index) => (
           <Item
             key={index}

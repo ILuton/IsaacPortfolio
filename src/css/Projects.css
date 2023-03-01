@@ -22,3 +22,21 @@
   border: 1px solid black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-50%);
+
+}
+
+.animateProjectOne{
+  transition:  3s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transform: translateY(0);
+}
+
