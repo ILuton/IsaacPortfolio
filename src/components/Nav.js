@@ -1,13 +1,17 @@
-import React from 'react'
-import "../css/Nav.css"
-import Hamburger from './Hamburger'
+import React from "react";
+import "../css/Nav.css";
+import Hamburger from "./Hamburger";
 
 function Nav() {
+
+
+
   return (
-    <div className= "navContainer">
-      <Hamburger/>
+    <div
+      className="navContainer">
+      <Hamburger />
     </div>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

@@ -26,8 +26,8 @@
 .animatePhoto {
   animation: slide-in-photo 3s ease-out;
   animation-fill-mode: forwards;
+  transform: translateY(+50%);
   opacity: 0;
-  transform: translateY(-50%);
 }
 
 @keyframes slide-in-photo {

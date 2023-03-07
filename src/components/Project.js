@@ -6,6 +6,8 @@ import Stop from "../images/stop.png";
 import Top from "../images/top.png";
 import Devise from "../images/devise.png";
 import Zen from "../images/zen.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 
 function Item({ name, description }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +30,31 @@ function Item({ name, description }) {
     }
   };
 
+  const containerRefProjects = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [containerRefProjects]);
+
+  function handleScroll() {
+    if (containerRefProjects.current) {
+      const rect = containerRefProjects.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight / 1.5) {
+        const children = containerRefProjects.current.children;
+        for (let i = 0; i < children.length; i++) {
+          children[i].classList.add("animateProject");
+         
+        }
+      }
+    }
+  }
+
 
   return (
-    <div className={name}>
+    <div className={name} ref={containerRefProjects}>
       <img
         className="projectImage"
         onClick={togglePopup}
@@ -42,7 +66,7 @@ function Item({ name, description }) {
         <div className={className}>
           <h2>{name}</h2>
           <p>{description}</p>
-          <button onClick={togglePopup}>Close</button>
+          <FontAwesomeIcon icon={faAngleDoubleUp} onClick={togglePopup}/>
         </div>
       )}
     </div>
@@ -69,32 +93,10 @@ function Project() {
     },
   ];
 
-  const containerRefProjects = useRef(null);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [containerRefProjects]);
-
-  function handleScroll() {
-    if (containerRefProjects.current) {
-      const rect = containerRefProjects.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 1.5) {
-        const children = containerRefProjects.current.children;
-        for (let i = 0; i < children.length; i++) {
-          children[i].classList.add("animateProjectOne");
-         
-        }
-      }
-    }
-  }
-
   return (
     <div id="Work" className="workPage">
       <h1 className="aboutTitle">My Work</h1>
-      <div className="workContainer" ref={containerRefProjects}>
+      <div className="workContainer">
         {projects.map((projects, index) => (
           <Item
             key={index}

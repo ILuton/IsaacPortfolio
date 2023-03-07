@@ -7,8 +7,8 @@ import Icons from "./Icons";
 
 function About() {
   return (
-    <div className="aboutContainer">
-      <h1 id="About" className="aboutTitle">
+    <div className="aboutContainer" id="About">
+      <h1 className="aboutTitle">
         About
       </h1>
       <Profile />
