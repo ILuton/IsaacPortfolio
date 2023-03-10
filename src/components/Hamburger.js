@@ -25,7 +25,7 @@ function Hamburger() {
       <a className="menu-item" href="#Work" onClick={handleItemClick}>
         My Work
       </a>
-      <a id="contact" className="menu-item" href="/contact" onClick={handleItemClick}>
+      <a className="menu-item" href="#Contact" onClick={handleItemClick}>
         Contact
       </a>
 

@@ -26,19 +26,19 @@
   
   .block1 {
     transition: opacity 2s ease-in-out;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    opacity: 1;
+    animation-fill-mode: forwards;;
 
   }
   .block2 {
     transition: opacity 5s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     animation-fill-mode: forwards;
 
   }
   .block3 {
     transition: opacity 8s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     animation-fill-mode: forwards;
 
   }
@@ -60,6 +60,7 @@
   .blockText {
     width: 70%;
     text-align: center;
+    padding: 5%;
     
   }
 
@@ -75,3 +76,26 @@
   .responsive {
     color: #fb9e69;
   }
+
+  .animateResponsive {
+      animation: big-small 2s ease-in-out forwards;
+    }
+    
+    @keyframes big-small {
+      0% {  }
+      50% { transform: scale(1.5); }
+      100% {  }
+    }
+
+    .animateFast{
+      animation: spin 1s ease-in-out forwards;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(720deg);
+      }
+    }

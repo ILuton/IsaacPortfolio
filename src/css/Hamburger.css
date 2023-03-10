@@ -1,15 +1,17 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 7.5vw;
-  height: 3vh;
-  margin-left: .8rem;
-  margin-top: 2%;
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+  width: 100%;
+  height: 3%;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #373a47;
+  width: 8%;
+  border-radius: 25%;
 }
 
 /* Color/shape of burger icon bars on hover*/

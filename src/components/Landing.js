@@ -9,7 +9,7 @@ function Landing() {
         <h2>Full-stack Web Developer</h2>
       </div>
       <div className="landingLearnMore">
-        <a className="learnMoreTitle" href="#About">
+        <a className="learnMore" href="#About">
           <h3>Learn more</h3>
           <span className="arrow">&#8594;</span>
         </a>
