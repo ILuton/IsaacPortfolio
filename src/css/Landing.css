@@ -12,9 +12,8 @@
 
 .landingName {
   text-align: center;
-  font-size: 5vw;
   color: #3d3c3a;
-  margin-bottom: 10%;
+  margin-bottom: calc(40px + (60 - 40) * ((100vw - 300px) / (2560 - 300)));
   font-size: calc(14px + (38 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -30,8 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  min-width: 150px;
+  height: 3.5%;
+  width: calc(150px + (300 - 150) * ((100vw - 300px) / (2560 - 300)));;
   box-shadow: 0px 1px 1px #333;
   font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -79,14 +78,5 @@
   align-items: center ;
   justify-content: center;
 }
-
-  .landingName {
-    margin-bottom: 5%;
-  }
-
-  .landingLearnMore{
-  width: 20%;
-    
-  }
 
 }
