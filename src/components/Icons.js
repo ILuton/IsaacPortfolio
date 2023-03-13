@@ -17,14 +17,14 @@ function Icons() {
     const reactBar = document.querySelector(".reactBar");
     if (reactBar) {
       const reactBarRect = reactBar.getBoundingClientRect();
-      if (reactBarRect.top < window.innerHeight / 2.5) {
+      if (reactBarRect.top < window.innerHeight / 1.2) {
         reactBar.classList.add("fillReactBar");
       }
     }
     const cssBar = document.querySelector(".cssBar");
     if (cssBar) {
       const cssBarRect = cssBar.getBoundingClientRect();
-      if (cssBarRect.top < window.innerHeight / 2.5) {
+      if (cssBarRect.top < window.innerHeight / 1.2) {
         cssBar.classList.add("fillCssBar");
       }
     }
@@ -32,7 +32,7 @@ function Icons() {
     const htmlBar = document.querySelector(".htmlBar");
     if (htmlBar) {
       const htmlBarRect = htmlBar.getBoundingClientRect();
-      if (htmlBarRect.top < window.innerHeight / 2.5) {
+      if (htmlBarRect.top < window.innerHeight / 1.2) {
         htmlBar.classList.add("fillHtmlBar");
       }
     }
@@ -40,7 +40,7 @@ function Icons() {
     const jsBar = document.querySelector(".jsBar");
     if (jsBar) {
       const jsBarRect = jsBar.getBoundingClientRect();
-      if (jsBarRect.top < window.innerHeight / 2.5) {
+      if (jsBarRect.top < window.innerHeight / 1.2) {
         jsBar.classList.add("fillJsBar");
       }
     }
@@ -48,7 +48,7 @@ function Icons() {
     const mongoBar = document.querySelector(".mongoBar");
     if (mongoBar) {
       const mongoBarRect = mongoBar.getBoundingClientRect();
-      if (mongoBarRect.top < window.innerHeight / 2.5) {
+      if (mongoBarRect.top < window.innerHeight / 1.2) {
         mongoBar.classList.add("fillMongoBar");
       }
     }
@@ -56,7 +56,7 @@ function Icons() {
     const mysqlBar = document.querySelector(".mysqlBar");
     if (mysqlBar) {
       const mysqlBarRect = mysqlBar.getBoundingClientRect();
-      if (mysqlBarRect.top < window.innerHeight / 2.5) {
+      if (mysqlBarRect.top < window.innerHeight / 1.2) {
         mysqlBar.classList.add("fillMysqlBar");
       }
     }

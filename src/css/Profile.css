@@ -18,13 +18,13 @@
 }
 
 .profilePic {
-  height: 40vh;
+  height: calc(250px + (450 - 250) * ((100vw - 300px) / (2560 - 300)));
   width: auto;
   border-radius: 7%;
 }
 
 .animatePhoto {
-  animation: slide-in-photo 3s ease-out;
+  animation: slide-in-photo 1s ease-out;
   animation-fill-mode: forwards;
   transform: translateY(+50%);
   opacity: 0;
@@ -42,9 +42,38 @@
   height: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  font-weight: 400;
-  font-size: 110%;
-  margin-bottom: 8%;
+  justify-content: center;
+  font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (2560 - 300)));
+  font-weight: bold;
+  margin-bottom: calc(13px + (36 - 13) * ((100vw - 300px) / (2560 - 300)));
+
+}
+
+@media only screen and (min-width: 769px) {
+  .profileContainer {
+  width: 80%;
+  }
+
+  .profilePicContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+  }
+
+  .profileText {
+    width: 80%;
+    height: 100%;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .profileText p {
+    padding: 20px;
+    text-align: center;
+  }
 }

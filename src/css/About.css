@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 4%;
-
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
 }
 
 .aboutTitle {
@@ -15,7 +15,14 @@
   width: 100%;
   text-align: center;
   height: 5%;
-  margin-bottom: 5%;
-  margin-top: 10%;
-  
+  font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (2560 - 300)));;
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
+  margin-top: calc(40px + (60 - 40) * ((100vw - 300px) / (2560 - 300)));
+}
+
+@media only screen and (min-width: 769px) {
+  .aboutContainer {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }

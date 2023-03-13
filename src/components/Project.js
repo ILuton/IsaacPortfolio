@@ -42,7 +42,7 @@ function Item({ name, description }) {
   function handleScroll() {
     if (containerRefProjects.current) {
       const rect = containerRefProjects.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 2.5) {
+      if (rect.top < window.innerHeight / 1) {
         const children = containerRefProjects.current.children;
         for (let i = 0; i < children.length; i++) {
           children[i].classList.add("animateProject");

@@ -61,3 +61,18 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.borderBottom{
+  display: none;}
+
+@media only screen and (min-width: 768px) {
+
+.borderBottom{
+  width: 100%;
+  font-size: 18px;
+  background-color: #5a7a80;
+  margin-top: -1%;
+  color: #5a7a80;
+  display: block;
+}
+
+}

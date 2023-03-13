@@ -10,6 +10,7 @@ function App() {
     <div className="app">
       <Nav />
       <Landing />
+      <div className="borderBottom">w</div>
       <About />
       <Project/> 
       <Contact/>

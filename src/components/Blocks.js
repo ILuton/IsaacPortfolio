@@ -13,6 +13,7 @@ function Blocks() {
   const containerRefInt = useRef(null);
   const containerRefFast = useRef(null);
 
+
   const [changeImage, changeImageTwo] = useState(Intuition);
 
   useEffect(() => {
@@ -35,22 +36,22 @@ function Blocks() {
 
     if (containerRefResponsive.current) {
       const rect = containerRefResponsive.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 2.5) {
+      if (rect.top < window.innerHeight / 1.5) {
         containerRefResponsive.current.classList.add("animateResponsive");
       }
     }
 
     if (containerRefInt.current) {
       const rect = containerRefInt.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 3) {
-        changeImageTwo(IntuitionTwo)
+      if (rect.top < window.innerHeight / 1.5) {
+        setTimeout(() => changeImageTwo(IntuitionTwo), 1200);
       }
     }
 
     if (containerRefFast.current) {
       const rect = containerRefFast.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 3.5) {
-        containerRefFast.current.classList.add("animateFast");
+      if (rect.top < window.innerHeight / 1.5) {
+        setTimeout(()=> containerRefFast.current.classList.add("animateFast"), 1500);
       }
       }
     }
