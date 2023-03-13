@@ -76,20 +76,33 @@ function Item({ name, description }) {
 function Project() {
   const projects = [
     {
-      name: "Stop",
-      description: "test",
+      name: "S.T.O.P.",
+      description: "S.T.O.P. is a crowdfunding platform designed for small scientific research programs to help secure funding.",
+      liveLink:"",
+      githubLink:"",
+      technologiesUsed:"",
+
     },
     {
       name: "Devise",
-      description: "test2",
+      description: "Devise is a project planning website that allows users create/join teams with coworkers to manage and orgainze all aspects of a projects in one location.",
+      liveLink:"",
+      githubLink:"",
+      technologiesUsed:"",
     },
     {
       name: "Top Tech Blog",
-      description: "test3",
+      description: "Blog site for users to create posts about new and interesting technolgies and share with others",
+      liveLink:"",
+      githubLink:"",
+      technologiesUsed:"",
     },
     {
       name: "Zen Ten",
-      description: "test4",
+      description: "Zen Ten is a meditation website where users can pair calming relaxing images of their choice with music for a set duration of the users choosing.",
+      liveLink:"",
+      githubLink:"",
+      technologiesUsed:"",
     },
   ];
 
