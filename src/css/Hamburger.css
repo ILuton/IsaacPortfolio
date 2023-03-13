@@ -55,6 +55,7 @@
   padding: 0.8em;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Individual item */
@@ -65,6 +66,10 @@
   margin-bottom: 0.8rem;
   font-size: 2rem;
 
+}
+
+.bm-item:hover{
+  color: #70bbb6 
 }
 
 /* Styling of overlay */
@@ -91,4 +96,12 @@
   height: auto;
   border-radius: 1rem;
   margin-right: 1rem;
+}
+
+.burgerGithub:hover {
+  transform: scale(1.2)
+}
+
+.burgerLinkedIn:hover{
+  transform: scale(1.2)
 }

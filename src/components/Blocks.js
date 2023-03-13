@@ -26,7 +26,7 @@ function Blocks() {
   function handleScroll() {
     if (containerRefOne.current) {
       const rect = containerRefOne.current.getBoundingClientRect();
-      if (rect.top < window.innerHeight / 1.5) {
+      if (rect.top < window.innerHeight / 1) {
         const children = containerRefOne.current.children;
         for (let i = 0; i < children.length; i++) {
           children[i].classList.add("animateBlock");
@@ -57,7 +57,7 @@ function Blocks() {
     }
 
   return (
-    <div className="blockContainer" >
+    <div className="blockContainer" ref={containerRefOne} >
       <div className="block block1">
         <div className="blockImageContainer">
           <img className="aboutImage" ref={containerRefResponsive} src={Responsive} alt="" />

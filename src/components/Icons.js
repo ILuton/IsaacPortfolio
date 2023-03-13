@@ -5,6 +5,7 @@ import "../css/Icons.css";
 
 function Icons() {
   const containerRefIcon = useRef(null);
+  const containerRefIcons = useRef(null);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -14,17 +15,25 @@ function Icons() {
   }, [containerRefIcon]);
 
   function handleScroll() {
+
+    if (containerRefIcons.current) {
+      const rect = containerRefIcons.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight / 1) {
+        containerRefIcons.current.classList.add("animateContainer");
+      }
+    }
+
     const reactBar = document.querySelector(".reactBar");
     if (reactBar) {
       const reactBarRect = reactBar.getBoundingClientRect();
-      if (reactBarRect.top < window.innerHeight / 1.2) {
+      if (reactBarRect.top < window.innerHeight / 1.3) {
         reactBar.classList.add("fillReactBar");
       }
     }
     const cssBar = document.querySelector(".cssBar");
     if (cssBar) {
       const cssBarRect = cssBar.getBoundingClientRect();
-      if (cssBarRect.top < window.innerHeight / 1.2) {
+      if (cssBarRect.top < window.innerHeight / 1.3) {
         cssBar.classList.add("fillCssBar");
       }
     }
@@ -32,7 +41,7 @@ function Icons() {
     const htmlBar = document.querySelector(".htmlBar");
     if (htmlBar) {
       const htmlBarRect = htmlBar.getBoundingClientRect();
-      if (htmlBarRect.top < window.innerHeight / 1.2) {
+      if (htmlBarRect.top < window.innerHeight / 1.3) {
         htmlBar.classList.add("fillHtmlBar");
       }
     }
@@ -40,7 +49,7 @@ function Icons() {
     const jsBar = document.querySelector(".jsBar");
     if (jsBar) {
       const jsBarRect = jsBar.getBoundingClientRect();
-      if (jsBarRect.top < window.innerHeight / 1.2) {
+      if (jsBarRect.top < window.innerHeight / 1.3) {
         jsBar.classList.add("fillJsBar");
       }
     }
@@ -48,7 +57,7 @@ function Icons() {
     const mongoBar = document.querySelector(".mongoBar");
     if (mongoBar) {
       const mongoBarRect = mongoBar.getBoundingClientRect();
-      if (mongoBarRect.top < window.innerHeight / 1.2) {
+      if (mongoBarRect.top < window.innerHeight / 1.3) {
         mongoBar.classList.add("fillMongoBar");
       }
     }
@@ -56,14 +65,14 @@ function Icons() {
     const mysqlBar = document.querySelector(".mysqlBar");
     if (mysqlBar) {
       const mysqlBarRect = mysqlBar.getBoundingClientRect();
-      if (mysqlBarRect.top < window.innerHeight / 1.2) {
+      if (mysqlBarRect.top < window.innerHeight / 1.3) {
         mysqlBar.classList.add("fillMysqlBar");
       }
     }
   }
 
   return (
-    <div className="iconContainer">
+    <div className="iconContainer" ref={containerRefIcons}>
       <div className="iconBox">
         <i className="devicon-react-original-wordmark colored icon"></i>
         <div className="barBackground">
