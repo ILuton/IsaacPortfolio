@@ -1,36 +1,49 @@
-
-  
 .animatePopup {
-    animation: slide-in 1s ease-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    transform: translateY(-100%);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  animation: slide-in 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 5px;
+}
 
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+.animatePopup h2 {
+  font-size: calc(24px + (80 - 24) * ((100vw - 300px) / (2560 - 300)));
+  margin-bottom: 10px;
+  color: rgb(16, 14, 14);
+}
+
+.animatePopup p {
+  font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (2560 - 300)));
+  margin-bottom: 20px;
+}
+
+.popup button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .animatePopup {
+    transform: translateX(-100%);
+  }
+
   @keyframes slide-in {
     to {
-        opacity: 1;
-        transform: translateY(0);
+      transform: translateX(0);
+      opacity: 1;
     }
   }
-  
-  
-  .popup h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: rgb(16, 14, 14);
-  }
-  
-  .popup p {
-    margin-bottom: 20px;
-  }
-  
-  .popup button {
-    display: block;
-    margin: 0 auto;
-  }
+}
