@@ -20,11 +20,11 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-bottom: calc(40px + (60 - 40) * ((100vw - 300px) / (2560 - 300)));
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
 }
 
 .projectImage {
-  width: calc(250px + (1000 - 250) * ((100vw - 300px) / (2560 - 300)));
+  width: calc(250px + (700 - 250) * ((100vw - 300px) / (2560 - 300)));
   height: auto;
   border-radius: 3%;
   border-radius: 3%;
@@ -32,6 +32,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(+50%);
   opacity: 0;
+  margin-bottom: 10px;
 }
 
 .animateProject {
@@ -46,5 +47,10 @@
   .projectContainer{
     flex-direction: row;
 
+  }
+
+  .animateProject{
+    margin-bottom: 0px;
+    margin-right: 10px;
   }
 }

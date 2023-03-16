@@ -6,8 +6,6 @@ import Stop from "../images/stop.png";
 import Top from "../images/top.png";
 import Devise from "../images/devise.png";
 import Zen from "../images/zen.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 
 function Item({ name, description, techUsed, liveLink, githubLink }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,16 +63,17 @@ function Item({ name, description, techUsed, liveLink, githubLink }) {
           <h2>{name}</h2>
           <p>{description}</p>
           <p>{techUsed}</p>
-          <div>
-            <h4>Live link:</h4>
-            <a href={liveLink} target="_blank" rel="noreferrer">{liveLink}</a>
-            <h4>Github link:</h4>
-            <a href={githubLink} target="_blank" rel="noreferrer">{githubLink}</a>
+          <div className="popupLinks">
+            <a href={liveLink} target="_blank" rel="noreferrer">
+              <h4>Live link</h4>
+            </a>
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <h4>Github link</h4>
+            </a>
           </div>
-          <div onClick={togglePopup}>
-            <FontAwesomeIcon icon={faAngleDoubleUp}></FontAwesomeIcon>
-            close
-          </div>
+          <button onClick={togglePopup} className="close">
+            &#x2716;
+          </button>
         </div>
       )}
     </div>
@@ -89,7 +88,8 @@ function Project() {
         "S.T.O.P. is a crowdfunding platform designed for small scientific research programs to help secure funding.",
       liveLink: "https://stop.herokuapp.com/",
       githubLink: "https://github.com/ILuton/STOP",
-      technologiesUsed: "f",
+      technologiesUsed:
+        "React, HTML, CSS, MongoDB, GraphQL, Apollo Server, JSON Web Tokens, Stripe",
     },
     {
       name: "Devise",
@@ -97,7 +97,8 @@ function Project() {
         "Devise is a project planning website that allows users create/join teams with coworkers to manage and orgainze all aspects of a projects in one location.",
       liveLink: "https://devise.herokuapp.com/",
       githubLink: "https://github.com/ILuton/DEVise-",
-      technologiesUsed: "",
+      technologiesUsed:
+        "Javascript, HTML, CSS, HandleBars, MySql, Express.js, Bcrypt",
     },
     {
       name: "Top Tech Blog",
@@ -105,7 +106,8 @@ function Project() {
         "Blog site for users to create posts about new and interesting technolgies and share with others",
       liveLink: "https://thawing-fortress-77603.herokuapp.com/",
       githubLink: "https://github.com/ILuton/Tech-Blog-",
-      technologiesUsed: "",
+      technologiesUsed:
+        "Javascript, HTML, CSS, HandleBars, MySql, Express.js, Bcrypt",
     },
     {
       name: "Zen Ten",
@@ -113,7 +115,7 @@ function Project() {
         "Zen Ten is a meditation website where users can pair calming relaxing images of their choice with music for a set duration of the users choosing.",
       liveLink: "",
       githubLink: "",
-      technologiesUsed: "",
+      technologiesUsed: "Javascript, CSS, HTML, Bulma, Web API's",
     },
   ];
 

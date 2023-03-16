@@ -9,7 +9,9 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  padding: 5px;
+  padding: 10px;
+  background-color: rgb(214, 208, 208);
+  border-radius: 3%;
 }
 
 @keyframes slide-in {
@@ -20,24 +22,43 @@
 }
 
 .animatePopup h2 {
-  font-size: calc(24px + (80 - 24) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (2560 - 300)));
   margin-bottom: 10px;
   color: rgb(16, 14, 14);
 }
 
 .animatePopup p {
-  font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (2560 - 300)));
   margin-bottom: 20px;
 }
 
-.popup button {
-  display: block;
-  margin: 0 auto;
+.popupLinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
+
+.popupLinks{
+  font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (2560 - 300)));
+}
+
+.close{
+  width: auto;
+  height:auto;
+  font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (2560 - 300)));
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
 
 @media only screen and (min-width: 769px) {
   .animatePopup {
     transform: translateX(-100%);
+    width: 50%;
+
   }
 
   @keyframes slide-in {

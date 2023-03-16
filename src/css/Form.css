@@ -1,5 +1,5 @@
 .formContainer {
-  height: 70%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,20 +7,14 @@
   justify-content: space-around;
 }
 
-.commentForm {
+.commentForm{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 80%;
-  width: 80%;
-  margin-top: 10%;
-  color: #151312;
-  background-color: #f5f8cb;
-  border-radius: 5%;
-  font-size: 150%;
-  border: 1px solid black;
-  transform: perspective(500px) rotateY(180deg);
+}
+
+form label{
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
 }
 
 .formAnimation {
@@ -42,6 +36,7 @@
   justify-content: center;
   align-items: center;
   text-shadow: 0px 1px 1px #333;
+  margin-bottom: 15px;
 }
 
 .name {
@@ -66,13 +61,15 @@
   border-radius: 12%;
   text-shadow: 0px 1px 1px #333;
   padding: 1.5%;
+  width: 50%;
+  margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
 }
 
 form input{
-  width: 95%;
+  width: 100%;
 }
 
 form textarea{
-  width: 95%;
+  width: 100%;
 }
 

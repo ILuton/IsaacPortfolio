@@ -80,16 +80,13 @@ function Form() {
       {isSubmitted && <PopupSubmit />}
       <form onSubmit={handleSubmit} className="commentForm">
         <label className='name'>
-          Name:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
+          <input placeholder="name" type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
         <label className='email'>
-          Email:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+          <input placeHolder="email"type="email" name="email" value={formData.email} onChange={handleChange} />
         </label>
         <label className='message'>
-          Message:
-          <textarea name="message" value={formData.message} onChange={handleChange} />
+          <textarea placeholder="message" name="message" value={formData.message} onChange={handleChange} />
         </label>
         <button className='sumbitButton' type="submit">Submit</button>
       </form>
