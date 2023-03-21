@@ -46,7 +46,7 @@
   justify-content: center;
   font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (2560 - 300)));
   font-weight: bold;
-  margin-bottom: calc(13px + (36 - 13) * ((100vw - 300px) / (2560 - 300)));
+  margin-bottom: calc(12px + (60 - 12) * ((100vw - 300px) / (2560 - 300)));
 
 }
 

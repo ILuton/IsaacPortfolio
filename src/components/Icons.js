@@ -73,7 +73,7 @@ function Icons() {
 
   return (
     <div className="iconContainer" ref={containerRefIcons}>
-      <div className="iconBox">
+      <div className="iconBox One">
         <i className="devicon-react-original-wordmark colored icon"></i>
         <div className="barBackground">
           <div className="reactBar" ref={containerRefIcon} />
@@ -103,7 +103,7 @@ function Icons() {
           <div className="mongoBar" />
         </div>
       </div>
-      <div className="iconBox">
+      <div className="iconBox Last">
         <i className="devicon-mysql-plain-wordmark icon" style={{color:"white"}}></i>
         <div className="barBackground">
           <div className="mysqlBar" />

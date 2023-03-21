@@ -1,12 +1,19 @@
+:root {
+  --clr-3: rgb(255, 126, 39);
+  --clr-4: rgb(241, 255, 196);
+  --clr-5: rgb(1, 183, 167);
+}
+
 .iconContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   width: 94%;
-  height: 100vw;
-  background-color: rgb(47, 46, 46);
-  border-radius: 6px;
+  background-color: #646565;
+  border-radius: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  position: relative;
+  
 }
 
 .iconBox {
@@ -15,10 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #646565;
+  border-radius: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+ 
 }
 
 .icon {
-  font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (2560 - 300)));
+  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (2560 - 300)));
+
 }
 
 .barBackground {
@@ -31,9 +42,8 @@
 .fillReactBar {
   height: 100%;
   width: 0%;
-  background-color: #61dafb ;
+  background-color: #61dafb;
   animation: fillReactBar 1s forwards;
-
 }
 
 @keyframes fillReactBar {
@@ -80,7 +90,7 @@
 .fillJsBar {
   height: 100%;
   width: 0%;
-  background-color: #efdb4f ;
+  background-color: #efdb4f;
   animation: fillJSBar 1s forwards;
 }
 
@@ -96,7 +106,7 @@
 .fillMongoBar {
   height: 100%;
   width: 0%;
-  background-color: #4faa40 ;
+  background-color: #4faa40;
   animation: fillMongoBar 1s forwards;
 }
 
@@ -112,7 +122,7 @@
 .fillMysqlBar {
   height: 100%;
   width: 0%;
-  background-color: white ;
+  background-color: white;
   animation: fillMySQLBar 1s forwards;
 }
 
@@ -125,12 +135,16 @@
   }
 }
 
-
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .iconContainer {
-    width: 33%;
+    width: 40%;
     height: 50vh;
     transform: translate(+200%);
+  }
+
+  .iconBox{
+  border-radius:0;
+
   }
 
   .animateContainer {
@@ -138,11 +152,62 @@
     animation-fill-mode: forwards;
     opacity: 0;
   }
-  
+
   @keyframes slide-in-block {
     to {
       opacity: 1;
       transform: translateX(0);
     }
+  }
+  @property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
+  .iconContainer::after,
+  .iconContainer::before {
+    content: "";
+    position: absolute;
+    inset: -0.3rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3)
+    );
+    border-radius: inherit;
+    animation: rotation 10s linear infinite;
+  }
+  .iconContainer::after {
+    filter: blur(2rem);
+  }
+  .One {
+    border-top-left-radius: calc(
+      16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))
+    );
+    border-top-right-radius: calc(
+      16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))
+    );
+  }
+
+  .Last {
+    border-bottom-left-radius: calc(
+      16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))
+    );
+    border-bottom-right-radius: calc(
+      16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))
+    );
   }
 }

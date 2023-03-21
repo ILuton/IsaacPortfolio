@@ -35,6 +35,11 @@
   margin-bottom: 10px;
 }
 
+.projectImage:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
 .animateProject {
   transition: 1s ease-in;
   animation-fill-mode: forwards;

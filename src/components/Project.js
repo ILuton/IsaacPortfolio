@@ -60,6 +60,9 @@ function Item({ name, description, techUsed, liveLink, githubLink }) {
 
       {isOpen && (
         <div className={className}>
+           <button onClick={togglePopup} className="close">
+            &#x2716;
+          </button>
           <h2>{name}</h2>
           <p>{description}</p>
           <p>{techUsed}</p>
@@ -71,9 +74,6 @@ function Item({ name, description, techUsed, liveLink, githubLink }) {
               <h4>Github link</h4>
             </a>
           </div>
-          <button onClick={togglePopup} className="close">
-            &#x2716;
-          </button>
         </div>
       )}
     </div>
