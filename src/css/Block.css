@@ -52,11 +52,11 @@
 }
 
 .responsive {
-  color: #fab584;
+  color: #f3852c;
 }
 
 .fast {
-  color: #73bab6;
+  color: #49aaa6 
 }
 
 .animateResponsive {
@@ -89,7 +89,7 @@
 @media only screen and (min-width: 768px) {
   .blockContainer {
     height: 50vh;
-    width: 45%;
+    width: 35%;
   }
 
   .block {

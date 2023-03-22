@@ -3,12 +3,15 @@ import "../css/Contact.css";
 import Form from "./Form";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
+import back from "../images/back.png";
 
 function Contact() {
   return (
     <div className="contactContainer" id="Contact">
+      <div className="contactFormContainer">
       <h1 className="contactTitle">Contact Me</h1>
       <Form />
+      </div>
       <div className="contactBottom">
         <div className="contactLinks">
         <a target="_blank" rel="noreferrer" href="https://github.com/ILuton">
@@ -22,6 +25,8 @@ function Contact() {
           <img className="contactLinkedin" src={linkedin} alt="" />
         </a>
         </div>
+        <img className="back" src={back} alt=""/>
+        <h4>Back To Top</h4>
         <p>Isaac Luton &copy;2023</p>
       </div>
     </div>

@@ -137,8 +137,8 @@
 
 @media only screen and (min-width: 768px) {
   .iconContainer {
-    width: 40%;
-    height: 50vh;
+    width: calc(350px + (700 - 350) * ((100vw - 768px) / (2560 - 768)));
+    height: calc(365px + (700 - 365) * ((100vw - 768px) / (2560 - 768)));
     transform: translate(+200%);
   }
 

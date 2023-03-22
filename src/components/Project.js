@@ -60,12 +60,17 @@ function Item({ name, description, techUsed, liveLink, githubLink }) {
 
       {isOpen && (
         <div className={className}>
-           <button onClick={togglePopup} className="close">
+          <div className="projectTop">
+          <button onClick={togglePopup} className="close">
             &#x2716;
           </button>
           <h2>{name}</h2>
+        </div>
           <p>{description}</p>
+          <div>
+          <p className="techUsed">Technolgies Used</p>
           <p>{techUsed}</p>
+          </div>
           <div className="popupLinks">
             <a href={liveLink} target="_blank" rel="noreferrer">
               <h4>Live link</h4>
@@ -94,7 +99,7 @@ function Project() {
     {
       name: "Devise",
       description:
-        "Devise is a project planning website that allows users create/join teams with coworkers to manage and orgainze all aspects of a projects in one location.",
+        "Devise is a project planning website that allows users to create/join teams and manage and organize projects.",
       liveLink: "https://devise.herokuapp.com/",
       githubLink: "https://github.com/ILuton/DEVise-",
       technologiesUsed:

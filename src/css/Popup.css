@@ -7,14 +7,14 @@
   opacity: 0;
   transform: translateY(-100%);
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
-  padding: 10px;
   background-color: #646565;
   border-radius: 3%;
-  color: rgb(229, 226, 226)
+  color: rgb(229, 226, 226);
+  padding: 10px;
 }
 
 @keyframes slide-in {
@@ -24,9 +24,17 @@
   }
 }
 
+.techUsed{
+  text-decoration: underline;
+  font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (2560 - 300)));
+  margin-bottom: 0px !important;
+}
+
 .animatePopup h2 {
   font-size: calc(24px + (50 - 24) * ((100vw - 300px) / (2560 - 300)));
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  width: 95%;
+  
 }
 
 .animatePopup p {
@@ -50,17 +58,23 @@
 
 
 .close{
-  width: auto;
-  height:auto;
   font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (2560 - 300)));
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  /* transition: transform 3s ease; */
   font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (2560 - 300)));
   color: rgb(229, 226, 226);
-  align-self: flex-end;
-  width: 10%;
+  align-self: flex-start;
+  width: 5%;
+  margin-top: calc(-8px + (16 - 14) * ((100vw - 300px) / (2560 - 300)));;
+}
+
+.projectTop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
 }
 
 

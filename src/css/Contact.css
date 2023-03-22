@@ -1,7 +1,7 @@
 .contactContainer {
-  height: auto;
+  height: 80vh;
   width: 100vw;
-  background-color: #5a7a80;
+  background-color: #f4efec;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -14,14 +14,12 @@
   text-shadow: 0px 1px 1px #333;
   width: 100%;
   text-align: center;
-  height: 5%;
   font-size: calc(30px + (80 - 30) * ((100vw - 300px) / (2560 - 300)));
   margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (2560 - 300)));
-  margin-top: calc(40px + (60 - 40) * ((100vw - 300px) / (2560 - 300)));
 }
 
 .contactLinkedin {
-  width: calc(80px + (100 - 80) * ((100vw - 300px) / (2560 - 300)));
+  width: calc(60px + (80 - 60) * ((100vw - 300px) / (2560 - 300)));
   height: auto;
   border-radius: 18%;
   margin-top: 10px;
@@ -29,7 +27,7 @@
 }
 
 .contactGithub {
-  width: calc(75px + (100 - 75) * ((100vw - 300px) / (2560 - 300)));
+  width: calc(55px + (75 - 55) * ((100vw - 300px) / (2560 - 300)));
   height: auto;
   border-radius: 18%;
   margin-top: 10px;
@@ -47,11 +45,24 @@
 .contactLinks {
   width: calc(150px + (300 - 150) * ((100vw - 300px) / (2560 - 300)));
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contactBottom p {
   opacity: 0.3;
-  margin-top: 4%;
   font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (2560 - 300)));
 }
+
+.back {
+  width: calc(50px + (100 - 50) * ((100vw - 300px) / (2560 - 300)));
+  height: auto;
+}
+
+.contactFormContainer {
+  background-color: #49aaa6;
+  width: 40%;
+  height: 50%;
+  align-self: center;
+  border: 10px solid #fab584;;
+}
+

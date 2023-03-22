@@ -86,7 +86,7 @@ function Form() {
           <input placeHolder="email"type="email" name="email" value={formData.email} onChange={handleChange} />
         </label>
         <label className='message'>
-          <textarea placeholder="message" name="message" value={formData.message} onChange={handleChange} />
+          <input placeholder="message" name="message" value={formData.message} onChange={handleChange} />
         </label>
         <button className='sumbitButton' type="submit">Submit</button>
       </form>
