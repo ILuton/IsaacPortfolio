@@ -74,6 +74,12 @@ function Icons() {
   return (
     <div className="iconContainer" ref={containerRefIcons}>
       <div className="iconBox One">
+        <i className="devicon-javascript-plain colored icon"></i>
+        <div className="barBackground">
+          <div className="jsBar" />
+        </div>
+      </div>
+      <div className="iconBox">
         <i className="devicon-react-original-wordmark colored icon"></i>
         <div className="barBackground">
           <div className="reactBar" ref={containerRefIcon} />
@@ -89,12 +95,6 @@ function Icons() {
         <i className="devicon-html5-plain-wordmark colored icon"></i>
         <div className="barBackground">
           <div className="htmlBar" />
-        </div>
-      </div>
-      <div className="iconBox">
-        <i className="devicon-javascript-plain colored icon"></i>
-        <div className="barBackground">
-          <div className="jsBar" />
         </div>
       </div>
       <div className="iconBox">

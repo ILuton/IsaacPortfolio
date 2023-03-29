@@ -36,12 +36,13 @@
 }
 
 .projectImage:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
+  transition: .1s forwards;
   cursor: pointer;
 }
 
 .animateProject {
-  transition: 1s ease-in;
+  transition: 1s;
   animation-fill-mode: forwards;
   opacity: 1;
   transform: translateY(0);

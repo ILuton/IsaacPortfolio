@@ -118,8 +118,8 @@ function Project() {
       name: "Zen Ten",
       description:
         "Zen Ten is a meditation website where users can pair calming relaxing images of their choice with music for a set duration of the users choosing.",
-      liveLink: "",
-      githubLink: "",
+      liveLink: "https://juliakhdavis.github.io/zenTen/",
+      githubLink: "https://github.com/juliakhdavis/zenTen",
       technologiesUsed: "Javascript, CSS, HTML, Bulma, Web API's",
     },
   ];
